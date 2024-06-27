@@ -1,0 +1,29 @@
+{% extends "userlayout.html" %}
+{% block content %}
+
+<div class="w3-card-4 w3-margin">
+
+    
+  <div class="w3-card-4 w3-margin">
+
+    <header class="w3-container w3-blue">
+      <h1>Textmining History</h1>
+    </header>
+
+    <div class="w3-container" style="overflow-x:auto; overflow-y: auto;">
+        
+      {% for table in tables %}
+        {{titles[loop.index]}}
+        {{ table|safe }}
+      {% endfor %}
+
+    </div>
+    
+    <br>
+    <footer class="w3-container w3-blue">
+      <h5></h5>
+    </footer>
+    
+    </div>    
+
+    {% endblock %}

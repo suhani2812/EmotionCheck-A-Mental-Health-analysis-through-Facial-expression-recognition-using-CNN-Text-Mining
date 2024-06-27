@@ -1,0 +1,58 @@
+{% extends "userlayout.html" %}
+{% block content %}
+
+<h1>Find Doctor:</h1>
+
+<FORM STYLE="padding-left:5px">
+<table>
+<tr><td><INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName1" ONCLICK="ShowRadioButtonDiv('GroupName', 3)"/>Hyderabad<BR></td></tr>
+<tr><td><INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName2" ONCLICK="ShowRadioButtonDiv('GroupName', 3)"/>Bombay<BR></td></tr>
+<tr><td><INPUT TYPE="radio" NAME="RadioGroupName" ID="GroupName3" ONCLICK="ShowRadioButtonDiv('GroupName', 3)"/>Chennai<BR></td></tr>
+
+</table>
+</FORM>
+
+
+<SCRIPT>
+function ShowRadioButtonDiv (IdBaseName, NumberOfButtons) {
+    for (x=1;x<=NumberOfButtons;x++) {
+        CheckThisButton = IdBaseName + x;
+        ThisDiv = IdBaseName + x +'Div';
+    if (document.getElementById(CheckThisButton).checked) {
+        document.getElementById(ThisDiv).style.display = "block";
+        }
+    else {
+        document.getElementById(ThisDiv).style.display = "none";
+        }
+    }
+    return false;
+}
+</SCRIPT>
+
+<br><br><br><br>
+
+<DIV ID="GroupName1Div" STYLE="display:none;">
+<table>
+<tr><td>Doctor Name:- Dr. S. Patil</td></tr>
+<tr><td>Contact No.:- +91 8888888888 </td></tr>
+<tr><td>Address:-M.G. Road, Ahmednagar</td></tr>
+</table>
+</DIV>
+<DIV ID="GroupName2Div" STYLE="display:none;">
+<table>
+<tr><td>Doctor Name:- Dr. B. Kulkarni</td></tr>
+<tr><td>Contact No.:- +91 8888888888 </td></tr>
+<tr><td>Address:-Deccan, Pune</td></tr>
+</table>
+</DIV>
+<DIV ID="GroupName3Div" STYLE="display:none;">
+<table>
+<tr><td>Doctor Name:- Dr. P. Kumar</td></tr>
+<tr><td>Contact No.:- +91 8888888888 </td></tr>
+<tr><td>Address:-R.K. Nashik</td></tr>
+</table>
+</DIV>
+
+    
+
+{% endblock %}

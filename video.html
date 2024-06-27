@@ -1,0 +1,11 @@
+{% extends "userlayout.html" %}
+{% block content %}
+<center>
+<div class="w3-card-4 w3-margin">
+    <img src="{{ url_for('video_stream') }}" alt="Alps" style="width:50%">
+    <div class="w3-container w3-center">
+      <p>Real Time Video Streaming</p>
+    </div>
+  </div>
+</center>
+  {% endblock %}

@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+<div style="display: flex; justify-content: center; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
+  <img src="static/images/qwerty.jpg" style="width: 100%; height: auto;">
+</div>
+<style>
+  .w3-container w3-blue{
+    color: #ffffff; /* Set the text color to white */
+  font-size: 2rem; /* Increase the font size */
+  margin: 0; /* Remove default margin */
+  font-family: 'Anton', sans-serif; 
+  font-weight: 100;/* Change the font-family here */
+  }
+</style>
+
+
+    <div class="w3-card-4 w3-margin">
+
+        <header class="w3-container w3-blue">
+          <b><h1>Introduction</h1></b>
+        </header>
+        
+        <div class="w3-container">
+          <p>Addressing the pressing concern of suicide in today's society, 
+            this study focuses on the identification of suicidal tendencies 
+            and depressive states among individuals. With India ranking high in 
+            annual suicide rates, the need for effective risk assessment is evident.
+             Psychological health of college students prove a vital role on their overall academic 
+             performance. Neglecting this can result in several problems such as stress, anxiety, 
+             depression etc. These problems need to be detected and controlled at the initial stages 
+             itself for the better mental health of the student. Detecting depression in a vast no of 
+             college students is challenging task. Most of the students are totally unaware that they may be 
+             having depression. If at all they are aware of it, some students conceal their depression from 
+             everyone. So an automated system is required that will pick out the students who are dealing with depression.
+	</p>
+        </div>
+        
+        <footer class="w3-container w3-blue">
+          <h5></h5>
+        </footer>
+        
+        </div>
+
+        <div class="w3-card-4 w3-margin">
+
+            <header class="w3-container w3-blue">
+              <b><h1>About The Project</h1></b>
+            </header>
+            
+            <div class="w3-container">
+              <p>
+                A system has been proposed here which captures frontal face videos of college students, 
+                extracts the facial features from each frame and analyses these facial features to detect signs of 
+                depression in them. This system will be trained with of frontal face images of happy, contempt and 
+                disgust faces. The presence of these features in the video frames will be analyzed to predict 
+                depression in the students. Leveraging the prevalence of social networks as a means of emotional 
+                expression, this research proposes a multifaceted approach to detecting and predicting depression. 
+                The core methodology involves employing a machine learning model that takes facial expression images
+                 as inputs, gauging the emotional state of the individual and predicting their depression status. 
+                 Training the model using a dataset of images, the predictive capacity is harnessed for real-time
+                  assessment. Text mining through Natural Language Processing (NLP) is incorporated, analyzing
+                   textual cues provided by users to enhance depression prediction. Integrating Convolutional Neural Networks (CNN) 
+                expedites the detection process, ensuring prompt identification of at-risk individuals.
+                 Additionally, image captioning is applied post-prediction for comprehensive insights. 
+                 The culmination of the image-based model and NLP yields a thorough decision-making process,
+                  providing a holistic evaluation of an individual's mental state. A detailed dashboard and web 
+                  application are proposed to facilitate the dissemination of results and user engagement. 
+                  Through these mediums, users gain access to their disease status evaluation, fostering awareness
+                   and encouraging proactive measures. In conclusion, this study advocates a proficient and scalable 
+                   approach, amalgamating machine learning techniques to effectively address mental health challenges.		</p>
+            </div>
+            
+            <footer class="w3-container w3-blue">
+              <h5></h5>
+            </footer>
+            
+            </div>
+
+    
+{% endblock %}
