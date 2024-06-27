@@ -3,3 +3,9 @@ Addressing the pressing concern of suicide in today's society, this study focuse
 The core methodology involves employing a machine learning model that takes facial expression images as inputs, gauging the emotional state of the individual and predicting their depression status. Training the model using a dataset of images, the predictive capacity is harnessed for real-time assessment. Text mining through Natural Language Processing (NLP) is incorporated, analyzing textual cues provided by users to enhance depression prediction.
 Integrating Convolutional Neural Networks (CNN) expedites the detection process, ensuring prompt identification of at-risk individuals. Additionally, image captioning is applied post-prediction for comprehensive insights. The culmination of the image-based model and NLP yields a thorough decision-making process, providing a holistic evaluation of an individual's mental state.
 A detailed dashboard and web application are proposed to facilitate the dissemination of results and user engagement. Through these mediums, users gain access to their disease status evaluation, fostering awareness and encouraging proactive measures. In conclusion, this study advocates a proficient and scalable approach, amalgamating machine learning techniques to effectively address mental health challenges
+![image](https://github.com/suhani2812/EmotionCheck-A-Mental-Health-analysis-through-Facial-expression-recognition-using-CNN-Text-Mining/assets/97598197/a5d28c89-4ca4-42c9-bd77-7bab66a18535)
+![image](https://github.com/suhani2812/EmotionCheck-A-Mental-Health-analysis-through-Facial-expression-recognition-using-CNN-Text-Mining/assets/97598197/82a698a2-e015-4231-9c22-6f4747ca3252)
+![image](https://github.com/suhani2812/EmotionCheck-A-Mental-Health-analysis-through-Facial-expression-recognition-using-CNN-Text-Mining/assets/97598197/c6f916f0-2ea2-4061-ba03-010036b26442)
+
+
+
