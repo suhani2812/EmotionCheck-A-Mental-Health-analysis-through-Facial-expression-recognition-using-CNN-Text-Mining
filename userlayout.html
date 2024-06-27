@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>VA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css') }}">
+<STYLE>
+  h1 {
+    text-align: center;
+  }
+
+  /* Footer Styles */
+.w3-container.w3-teal {
+  background-color: #009688; /* Change the background color to a slightly darker teal */
+  padding: 32px 16px; /* Increase the padding for better spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Add this line to stack the elements vertically */
+}
+
+.w3-container.w3-teal h1 {
+  font-family: 'Arial Black', sans-serif; /* Change the font to a bold, sans-serif font */
+  font-size: 32px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  margin: 0 0 16px 0; /* Add some spacing below the heading */
+  color: #fff; /* Set the text color to white */
+}
+
+.w3-container.w3-cell.w3-mobile {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w3-container.w3-cell.w3-mobile h5 {
+  font-size: 18px;
+  font-weight: bold; /* Make the heading text bold */
+  margin: 0 0 12px 0;
+  color: #fff; /* Set the heading color to white */
+}
+
+.w3-container.w3-cell.w3-mobile p {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #000; /* Set the text color to black */
+}
+
+.w3-container.w3-cell.w3-mobile:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.w3-container.w3-cell.w3-mobile:first-child > div {
+  flex: 1;
+  margin-right: 32px;
+}
+
+.w3-container.w3-cell.w3-mobile:last-child {
+  text-align: right;
+}
+</STYLE>
+<body data-load="1723728383">
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a href="home" class="w3-bar-item w3-button">Home</a>
+  <a href="textmining" class="w3-bar-item w3-button">Textmining</a>
+  <a href="record" class="w3-bar-item w3-button">Video History</a>
+  <a href="text_record" class="w3-bar-item w3-button">Textmining History</a>
+  <a href="doctor" class="w3-bar-item w3-button">Find Doctor</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+
+<div class="w3-container w3-teal">
+  <h1>EmotionCheck</h1>
+</div>
+
+{% block content %}
+{% endblock %}
+
+
+
+<!-- Footer-->
+<div class="w3-container w3-teal">
+  <div class="w3-container w3-cell w3-mobile" style="width:85%">
+    <h5>Developed By</h5>
+    <div class="w3-container w3-cell">
+      <b><p>Suhani Goel</p></b>
+      <b><p>Aditya Agrawal</p></b>
+    </div>
+    <div class="w3-container w3-cell">
+      <b><p>Jaymin Panchal</p></b>
+      <b><p>Ajishi Singh</p></b>
+    </div>
+  </div>
+  
+
+</div>
+      
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="static/js/ml.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $().jqLoad();
+    });
+</script>
+</html>
